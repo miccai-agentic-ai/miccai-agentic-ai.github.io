@@ -236,7 +236,7 @@ li {
 
 .session-description {
   font-size: 0.9em;
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0);
 }
 
 .highlight {
@@ -1017,8 +1017,9 @@ section,
 
 .section-title p {
   margin-bottom: 0;
-  position: relative;
+  /* position: relative; */
   z-index: 2;
+  Text-align:justify;
 }
 
 @media (max-width: 575px) {
@@ -1200,7 +1201,7 @@ section,
   margin: 0;
   padding: 0;
   color: black;
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
 
 /*--------------------------------------------------------------
@@ -1595,11 +1596,26 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   text-align: center;
   margin-bottom: 20px;
+  /* max-width: 220px; */
+}
+.team .member2 {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  text-align: center;
+  margin-bottom: 20px;
+  width: 250px;
 }
 
 .team .member img {
   border-radius: 50%;
   max-width: 60%;
+  /* max-width: 200px; */
+  margin: 30px 0;
+}
+.team .member2 img {
+  border-radius: 50%;
+  max-width: 60%;
+  /* max-width: 200px; */
   margin: 30px 0;
 }
 
@@ -1627,6 +1643,30 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
+.team .member2 .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.team .member2 h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.team .member2 span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.team .member2 p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
 .team .member .social {
   margin-top: 15px;
 }
@@ -1645,6 +1685,26 @@ section,
   margin: 0 2px;
 }
 
+/*--------------------------------------------------------------
+# Programe commitee
+--------------------------------------------------------------*/
+.programme-container {
+  /* width: 100%; */
+  max-width: 1200px;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  margin:  auto;
+  background-color: white;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  overflow: hidden;
+}
+.programme ul {
+  list-style-type: disc;
+  padding-inline-start: 20px;
+  column-count: 3;
+  column-gap: 40px;
+}
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
